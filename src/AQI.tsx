@@ -3,7 +3,7 @@ import axios from 'axios';
 import './AQI.css';
 
 const AQIFetcher = () => {
-  const [aqi, setAqi] = useState({data: {aqi: 0}, status: 'error'});
+  const [aqi, setAqi] = useState({ data: { aqi: 0 }, status: 'unknown' });
   const [city, setCity] = useState('');
 
   useEffect(() => {
